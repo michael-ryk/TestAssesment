@@ -88,7 +88,6 @@ h5 {
 	h3 {
 		font-size: 14px;
 	}
-
 }
 
 @media only screen and (max-width: 380px){
@@ -106,6 +105,12 @@ h5 {
 .container_item-header{
 	display: flex;
 	flex-direction: row;
+}
+
+@media only screen and (max-width: 500px) {
+	.container_item-header{
+		flex-direction: column;
+	}
 }
 
 @media only screen and (max-width: 380px){
@@ -143,7 +148,6 @@ img {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 140%;
-	/* identical to box height, or 20px */
 	letter-spacing: 0.2px;
 }
 
@@ -190,10 +194,18 @@ img {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 140%;
-	/* or 22px */
-
 	text-align: right;
 	letter-spacing: 0.2px;
+}
+
+@media only screen and (max-width: 720px) {
+	.btn-deal {
+
+	}
+
+	.item-score {
+		margin: 0;
+	}
 }
 
 .item-buttons .btn-secondary{
@@ -208,10 +220,8 @@ img {
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 140%;
-	/* identical to box height, or 20px */
 	text-align: right;
 	letter-spacing: 0.2px;
-	/* gray/800 - Xtra Bold - Gray */
 	color: #55626E;
 }
 
